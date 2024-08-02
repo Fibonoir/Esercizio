@@ -1,1 +1,46 @@
-/* Your styles here */
+.font-settings {
+    color: #393d41 ;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 1.65;
+}
+
+header {
+    background-color: black;
+}
+
+
+main *  {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.hero {
+    background-image: url(../images/banner.jpg);
+}
+
+.button{
+    background-color: #f04c2f ;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    padding-inline: 20px;
+}
+
+.heading-color {
+    color: #25a2c3 ;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+}
