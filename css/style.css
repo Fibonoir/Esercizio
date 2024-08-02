@@ -1,41 +1,30 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .font-settings {
     color: #393d41 ;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
     line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-
-header {
-    background-color: black;
+.font-settings > * {
+    flex-shrink: 1;
+    flex-grow: 0;
 }
-
-
-main *  {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-}
-
-.hero {
-    background-image: url(../images/banner.jpg);
-}
-
-.button{
-    background-color: #f04c2f ;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    border: 0;
-    padding: 10px;
-    border-radius: 5px;
-    padding-inline: 20px;
-}
-
 .heading-color {
     color: #25a2c3 ;
     font-family: "Montserrat", sans-serif;
@@ -44,3 +33,121 @@ main *  {
     font-style: normal;
     line-height: 1.5;
 }
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+main * :not(.card img){
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-inline: 10px;
+}
+
+main section {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.hero {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero h1{
+    font-size: 2em;
+}
+
+.hero .button{
+    background-color: #f04c2f ;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border: 0;
+    padding-inline: 30px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+p{
+    padding-bottom: 1.2rem;
+}
+
+.notebook {
+    border-radius: 50%;
+}
+
+.red-section{
+    color: white;
+    background-color: #e22d0e;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    line-height: 1.5;
+    
+}
+.red-section h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+.quote{
+    font-style: italic;
+}
+.red-section div div p{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.red-section div div p:first-of-type{
+    font-size: 1.5em;
+}
+
+
+.card {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding-top: 0;
+    margin: 1.2rem;
+}
+
+footer{
+    color: white;
+    background-color: #25a2c3;
+    margin-top: 1.2em;
+}
+
+footer h2{
+    font-size: 1.5em;
+    font-weight: 900;
+    font-weight: bold;
+}
+hr{
+    width: 30%;
+    color: white;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
